@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2/"
+     xml:base="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:lab2="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#suitable_for_adults -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#suitable_for_adults">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#chess"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#risk"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#people"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#suitable_for_kids -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#suitable_for_kids">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#card_game"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#checkers"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#monopoly"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#scrabble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#people"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#players -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#players">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#card_game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#card_game">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#checkers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#checkers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#chess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#chess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#monopoly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#monopoly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#people -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#people"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#risk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#scrabble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#scrabble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#game"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#adults -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#adults">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#people"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#kids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#kids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#people"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#доска -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#доска"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#карточная -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#карточная"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#карточная_игра -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#карточная_игра">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#card_game"/>
+        <lab2:suitable_for_kids rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#kids"/>
+        <lab2:players rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</lab2:players>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#монополия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#монополия">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#monopoly"/>
+        <lab2:suitable_for_kids rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#kids"/>
+        <lab2:players rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</lab2:players>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#риск -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#риск">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#risk"/>
+        <lab2:suitable_for_adults rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#adults"/>
+        <lab2:players rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</lab2:players>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#скреббл -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#скреббл">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#scrabble"/>
+        <lab2:suitable_for_kids rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#kids"/>
+        <lab2:players rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</lab2:players>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#словесная -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#словесная"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#стратегия -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#стратегия"/>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#шахматы -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#шахматы">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#chess"/>
+        <lab2:suitable_for_adults rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#adults"/>
+        <lab2:players rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</lab2:players>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#шашки -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#шашки">
+        <rdf:type rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#checkers"/>
+        <lab2:suitable_for_kids rdf:resource="http://www.semanticweb.org/kanattoroev/ontologies/2023/8/lab2#kids"/>
+        <lab2:players rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</lab2:players>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
